@@ -53,7 +53,7 @@ class GoogleVoiceApi{
             method: "post",
             data: [1, 10, 15, null, lastId, [null, true, true]]
         })
-
+        console.log('获取sms响应结果: %s', res.data[0]);
         let list = res.data[0];
         let newList = [];
         for (const item of list) {
