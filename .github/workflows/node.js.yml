@@ -4,12 +4,12 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  release:
+    types: [published]
   schedule:
     - cron: '0/1 * * * *'
+  watch:
+    types: [started]
 
 env:
   COOKIE: ${{ secrets.COOKIE }}
