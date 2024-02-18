@@ -62,7 +62,8 @@ class GoogleVoiceApi{
             }
             //if (item[1] != 0) continue;
 
-            let phone = item[0].slice(2);
+            //let phone = item[0].slice(2);
+            let phone = item[0];
             let ua = true;
             // 以+开头的号码 删除  +
             if (phone.indexOf("+") === 0) {
