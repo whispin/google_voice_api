@@ -60,7 +60,7 @@ class GoogleVoiceApi{
             if (item[0].indexOf("t.") === -1) {
                 continue;
             }
-            if (item[1] != 0) continue;
+            //if (item[1] != 0) continue;
 
             let phone = item[0].slice(2);
             let ua = true;
